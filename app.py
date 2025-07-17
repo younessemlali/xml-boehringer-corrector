@@ -30,9 +30,21 @@ def load_data_from_github():
         response = requests.get(url, timeout=10)
         if response.status_code == 200:
             df = pd.read_csv(StringIO(response.text))
+            
+            # Debug : afficher les colonnes trouvées
+            print(f"Colonnes trouvées: {list(df.columns)}")
+            
+            # Chercher la colonne numéro de commande (flexible)
+            num_col = None
+            for col in df.columns:
+                if 'num' in col.lower() and 'commande' in col.lower():
+                    num_col = col
+                    break
+            
             # S'assurer que les numéros gardent leurs zéros
-            if 'Numéro de commande' in df.columns:
-                df['Numéro de commande'] = df['Numéro de commande'].astype(str).str.zfill(6)
+            if num_col:
+                df[num_col] = df[num_col].astype(str).str.zfill(6)
+                
             return df, None
         else:
             return None, f"Erreur HTTP {response.status_code}"
@@ -140,20 +152,29 @@ with col1:
     st.success(f"✅ {len(df)} commandes disponibles")
     
     # Afficher les données
-    columns_to_show = ['Numéro de commande', 'Statut', 'Classification', 'HRBP', 'Code agence']
-    available_columns = [col for col in columns_to_show if col in df.columns]
-    
     st.dataframe(
-        df[available_columns],
+        df,
         use_container_width=True,
         hide_index=True
     )
     
     # Informations sur les commandes
     with st.expander("ℹ️ Commandes disponibles"):
-        for num in df['Numéro de commande'].unique():
-            row = df[df['Numéro de commande'] == num].iloc[0]
-            st.write(f"**{num}** → {row['HRBP']} ({row['Statut']})")
+        # Vérifier le nom exact de la colonne
+        num_col = None
+        for col in df.columns:
+            if 'num' in col.lower() and 'commande' in col.lower():
+                num_col = col
+                break
+        
+        if num_col:
+            for num in df[num_col].unique():
+                row = df[df[num_col] == num].iloc[0]
+                hrbp = row.get('HRBP', 'N/A')
+                statut = row.get('Statut', 'N/A')
+                st.write(f"**{num}** → {hrbp} ({statut})")
+        else:
+            st.write("Colonnes disponibles:", list(df.columns))
 
 with col2:
     st.subheader("📄 Correction des fichiers XML")
@@ -226,14 +247,21 @@ with col2:
                     file_result['Numéro commande'] = num_cmd
                     
                     # Chercher dans la base de données
-                    if num_cmd not in df['Numéro de commande'].values:
+                    # Trouver la colonne numéro de commande
+                    num_col = None
+                    for col in df.columns:
+                        if 'num' in col.lower() and 'commande' in col.lower():
+                            num_col = col
+                            break
+                    
+                    if num_col and num_cmd not in df[num_col].values:
                         file_result['Statut'] = '⚠️ Inconnu'
                         file_result['Message'] = f"Commande {num_cmd} absente de la base"
                         results.append(file_result)
                         continue
                     
                     # Appliquer les corrections
-                    commande_data = df[df['Numéro de commande'] == num_cmd].iloc[0].to_dict()
+                    commande_data = df[df[num_col] == num_cmd].iloc[0].to_dict()
                     corrections = correct_xml(root, commande_data)
                     
                     file_result['Statut'] = '✅ Corrigé'
