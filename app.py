@@ -249,7 +249,7 @@ with col2:
                 if not num_commande:
                     results.append({
                         'Fichier': uploaded_file.name,
-                        'Statut': '⚠️ Avertissement',
+                        'Statut': '⚠️ Attention',
                         'Message': 'Numéro de commande non trouvé dans le XML',
                         'Corrections': 0
                     })
@@ -269,12 +269,12 @@ with col2:
                 
                 # Corriger le XML
                 commande_data = commande_row.iloc[0].to_dict()
-                corrected_tree, corrections = correct_xml(tree, root, commande_data)
+                tree_corrected, corrections = correct_xml(tree, root, commande_data)
                 
                 # Sauvegarder le XML corrigé
                 xml_str = ET.tostring(root, encoding='unicode', method='xml')
                 corrected_files.append({
-                    'name': uploaded_file.name.replace('.xml', '_corrige.xml'),
+                    'name': f"corrected_{uploaded_file.name}",
                     'content': xml_str
                 })
                 
@@ -292,58 +292,58 @@ with col2:
             # Afficher les résultats
             st.markdown("### 📋 Résultats du traitement")
             
-            # Tableau récapitulatif
             results_df = pd.DataFrame(results)
             st.dataframe(results_df, use_container_width=True)
             
-            # Statistiques globales
-            total_corrections = results_df['Corrections'].sum()
-            successful = len(results_df[results_df['Statut'] == '✅ Corrigé'])
+            # Statistiques de traitement
+            total_files = len(results)
+            success_files = len([r for r in results if r['Statut'] == '✅ Corrigé'])
+            total_corrections = sum([r['Corrections'] for r in results])
             
             metrics_cols = st.columns(3)
             with metrics_cols[0]:
-                st.metric("Fichiers traités", len(results))
+                st.metric("Fichiers traités", total_files)
             with metrics_cols[1]:
-                st.metric("Fichiers corrigés", successful)
+                st.metric("Fichiers corrigés", success_files)
             with metrics_cols[2]:
                 st.metric("Total corrections", total_corrections)
             
             # Téléchargement des fichiers corrigés
             if corrected_files:
-                st.markdown("### 💾 Télécharger les fichiers corrigés")
+                st.markdown("### 📥 Télécharger les fichiers corrigés")
                 
-                if len(corrected_files) == 1:
-                    # Un seul fichier
-                    file_data = corrected_files[0]
-                    st.download_button(
-                        label=f"📥 Télécharger {file_data['name']}",
-                        data=file_data['content'],
-                        file_name=file_data['name'],
-                        mime="application/xml"
-                    )
-                else:
-                    # Plusieurs fichiers - créer un ZIP
+                # Option 1: Télécharger individuellement
+                with st.expander("Télécharger individuellement", expanded=False):
+                    for file_data in corrected_files:
+                        st.download_button(
+                            label=f"📄 {file_data['name']}",
+                            data=file_data['content'],
+                            file_name=file_data['name'],
+                            mime="application/xml"
+                        )
+                
+                # Option 2: Télécharger en ZIP
+                if len(corrected_files) > 1:
+                    # Créer un ZIP
                     zip_buffer = BytesIO()
                     with zipfile.ZipFile(zip_buffer, 'w', zipfile.ZIP_DEFLATED) as zip_file:
                         for file_data in corrected_files:
                             zip_file.writestr(file_data['name'], file_data['content'])
                     
                     zip_buffer.seek(0)
+                    
                     st.download_button(
-                        label=f"📥 Télécharger tous les fichiers ({len(corrected_files)} fichiers)",
+                        label="📦 Télécharger tous les fichiers (ZIP)",
                         data=zip_buffer.getvalue(),
                         file_name=f"xml_corriges_{datetime.now().strftime('%Y%m%d_%H%M%S')}.zip",
-                        mime="application/zip"
+                        mime="application/zip",
+                        type="primary"
                     )
 
-# Footer
+# Pied de page
 st.markdown("---")
 st.markdown("""
 <div style='text-align: center; color: #666;'>
-    <small>
-        Correcteur XML Boehringer v1.0 | 
-        Données synchronisées depuis GitHub | 
-        Dernière mise à jour : chaque 15 minutes
-    </small>
+    <p>Correcteur XML Boehringer v1.0 | Données synchronisées avec Google Sheets via GitHub</p>
 </div>
 """, unsafe_allow_html=True)
