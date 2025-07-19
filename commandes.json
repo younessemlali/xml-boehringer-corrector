@@ -5416,5 +5416,32 @@
     "HRBP": "Delphine Collas",
     "Date extraction": "2025-07-19T05:12:39.767Z",
     "Nom fichier source": "Boehringer_2025-07-18_14-07-42_PIXID____Commande___Boehringer_Ingelheim_3301___Sa_1981d8a83b8259d0.html"
+  },
+  {
+    "Num?ro de commande": "000710",
+    "Code agence": "TL4-TL4",
+    "Statut": "N1 - Niveau 1 (2A / 4A)",
+    "Classification": "02B - 170 Equipe",
+    "HRBP": "Isabelle Ducluzeaud",
+    "Date extraction": "2025-07-19T05:27:38.474Z",
+    "Nom fichier source": "Boehringer_2025-07-18_10-12-07_PIXID____Commande___Boehringer_Ingelheim_3301___To_1981d1ca61b4eff9.html"
+  },
+  {
+    "Num?ro de commande": "000651",
+    "Code agence": "LV2-LV2",
+    "Statut": "N1 - Niveau 1 (2A / 4A)",
+    "Classification": "02B - 170",
+    "HRBP": "Houria Gherras",
+    "Date extraction": "2025-07-19T05:27:40.188Z",
+    "Nom fichier source": "Boehringer_2025-07-18_10-23-51_PIXID____Commande___Boehringer_Ingelheim_3301___Sa_1981d4ad756c7d72.html"
+  },
+  {
+    "Num?ro de commande": "000658",
+    "Code agence": "LV2-LV2",
+    "Statut": "N1 - Niveau 1 (2A / 4A)",
+    "Classification": "03B - 195 Journ?e",
+    "HRBP": "Delphine Collas",
+    "Date extraction": "2025-07-19T05:27:41.722Z",
+    "Nom fichier source": "Boehringer_2025-07-18_14-07-42_PIXID____Commande___Boehringer_Ingelheim_3301___Sa_1981d8a83b8259d0.html"
   }
 ]
