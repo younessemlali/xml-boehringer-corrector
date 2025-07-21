@@ -4,7 +4,13 @@ import xml.etree.ElementTree as ET
 import requests
 from io import StringIO
 from datetime import datetime
-import chardet
+
+# Essayer d'importer chardet, mais continuer sans si non disponible
+try:
+    import chardet
+    CHARDET_AVAILABLE = True
+except ImportError:
+    CHARDET_AVAILABLE = False
 
 st.set_page_config(page_title="Correcteur XML Boehringer", page_icon="🔧", layout="wide")
 
@@ -59,15 +65,21 @@ def parse_xml_content(xml_content):
         if isinstance(xml_content, str):
             content = xml_content
         else:
-            # Essayer de détecter l'encodage automatiquement
-            try:
-                detected = chardet.detect(xml_content)
-                encoding = detected['encoding'] or 'utf-8'
-                content = xml_content.decode(encoding)
-            except:
-                # Si chardet n'est pas installé ou échoue, essayer différents encodages
-                encodings = ['utf-8', 'latin-1', 'iso-8859-1', 'windows-1252', 'cp1252']
+            # Si chardet est disponible, l'utiliser
+            if CHARDET_AVAILABLE:
+                try:
+                    detected = chardet.detect(xml_content)
+                    encoding = detected['encoding'] or 'utf-8'
+                    content = xml_content.decode(encoding)
+                except:
+                    # Si chardet échoue, passer au fallback
+                    content = None
+            else:
                 content = None
+            
+            # Fallback : essayer différents encodages
+            if content is None:
+                encodings = ['utf-8', 'latin-1', 'iso-8859-1', 'windows-1252', 'cp1252']
                 
                 for encoding in encodings:
                     try:
@@ -427,7 +439,7 @@ st.markdown("""
     <small>
     💡 Les données sont synchronisées depuis Google Sheets via GitHub<br>
     🔄 Actualisez la page pour voir les dernières mises à jour<br>
-    ⚠️ Note: Si vous avez des erreurs d'encodage, installez 'chardet' avec: pip install chardet
+    ℹ️ Détection d'encodage : {'Avancée (chardet)' if CHARDET_AVAILABLE else 'Basique (fallback)'}
     </small>
 </div>
 """, unsafe_allow_html=True)
