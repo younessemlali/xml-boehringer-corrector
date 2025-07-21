@@ -4,6 +4,7 @@ import xml.etree.ElementTree as ET
 import requests
 from io import StringIO
 from datetime import datetime
+import chardet
 
 st.set_page_config(page_title="Correcteur XML Boehringer", page_icon="🔧", layout="wide")
 
@@ -51,13 +52,35 @@ def load_data_from_github():
     except Exception as e:
         return None, f"Erreur: {str(e)}"
 
-# Fonction pour parser un XML
+# Fonction améliorée pour parser un XML avec gestion des encodages
 def parse_xml_content(xml_content):
     """Parse le contenu XML et retourne la racine"""
     try:
-        if isinstance(xml_content, bytes):
-            xml_content = xml_content.decode('utf-8')
-        root = ET.fromstring(xml_content)
+        if isinstance(xml_content, str):
+            content = xml_content
+        else:
+            # Essayer de détecter l'encodage automatiquement
+            try:
+                detected = chardet.detect(xml_content)
+                encoding = detected['encoding'] or 'utf-8'
+                content = xml_content.decode(encoding)
+            except:
+                # Si chardet n'est pas installé ou échoue, essayer différents encodages
+                encodings = ['utf-8', 'latin-1', 'iso-8859-1', 'windows-1252', 'cp1252']
+                content = None
+                
+                for encoding in encodings:
+                    try:
+                        content = xml_content.decode(encoding)
+                        break
+                    except UnicodeDecodeError:
+                        continue
+                
+                if content is None:
+                    # En dernier recours, ignorer les erreurs
+                    content = xml_content.decode('utf-8', errors='ignore')
+        
+        root = ET.fromstring(content)
         return root, None
     except Exception as e:
         return None, str(e)
@@ -70,7 +93,10 @@ def find_order_number(root):
         ("CommandNumber", ".//CommandNumber"),
         ("NumeroCommande", ".//NumeroCommande"),
         ("ContractNumber", ".//ContractNumber"),
-        ("Reference", ".//Reference")
+        ("Reference", ".//Reference"),
+        ("NumCommande", ".//NumCommande"),
+        ("OrderId", ".//OrderId"),
+        ("CommandeId", ".//CommandeId")
     ]
     
     for tag_name, path in search_paths:
@@ -80,9 +106,12 @@ def find_order_number(root):
     
     # Recherche dans les attributs si pas trouvé dans les éléments
     for elem in root.iter():
-        for attr in ['orderNumber', 'commandNumber', 'numero', 'ref']:
+        for attr in ['orderNumber', 'commandNumber', 'numero', 'ref', 'id', 'order', 'commande']:
             if attr in elem.attrib:
-                return elem.attrib[attr].strip().zfill(6), f"@{attr}"
+                value = elem.attrib[attr].strip()
+                # Vérifier si ça ressemble à un numéro de commande
+                if value.isdigit() or (len(value) <= 10 and any(c.isdigit() for c in value)):
+                    return value.zfill(6), f"@{attr}"
     
     return None, None
 
@@ -91,10 +120,24 @@ def correct_xml(root, commande_data):
     """Applique les corrections au XML"""
     corrections = []
     
+    # Mapper les noms de colonnes possibles
+    statut_key = next((k for k in commande_data.keys() if 'statut' in k.lower()), 'Statut')
+    class_key = next((k for k in commande_data.keys() if 'class' in k.lower()), 'Classification')
+    hrbp_key = next((k for k in commande_data.keys() if 'hrbp' in k.lower()), 'HRBP')
+    
     # Trouver ou créer PositionCharacteristics
     pos_char = root.find(".//PositionCharacteristics")
     if pos_char is None:
-        pos_char = ET.SubElement(root, "PositionCharacteristics")
+        # Chercher où l'insérer (après certains éléments spécifiques si possible)
+        insert_after = ['Header', 'OrderInfo', 'ContractInfo']
+        insert_index = len(list(root))
+        
+        for i, child in enumerate(root):
+            if child.tag in insert_after:
+                insert_index = i + 1
+        
+        pos_char = ET.Element("PositionCharacteristics")
+        root.insert(insert_index, pos_char)
         corrections.append("Création de la section PositionCharacteristics")
     
     # PositionStatus
@@ -103,31 +146,52 @@ def correct_xml(root, commande_data):
         pos_status = ET.SubElement(pos_char, "PositionStatus")
         corrections.append("Ajout de PositionStatus")
     
+    # Extraire le code du statut (ex: "N2" de "N2 - Niveau 2 (4B +)")
+    statut_value = commande_data.get(statut_key, '')
+    code_value = statut_value.split()[0] if statut_value else ''
+    
     code_elem = pos_status.find("Code")
     if code_elem is None:
         code_elem = ET.SubElement(pos_status, "Code")
-    code_elem.text = commande_data['Statut'].split()[0]
+    code_elem.text = code_value
     
     desc_elem = pos_status.find("Description")
     if desc_elem is None:
         desc_elem = ET.SubElement(pos_status, "Description")
-    desc_elem.text = commande_data['Statut']
+    desc_elem.text = statut_value
     
     # PositionLevel
     pos_level = pos_char.find("PositionLevel")
     if pos_level is None:
         pos_level = ET.SubElement(pos_char, "PositionLevel")
         corrections.append("Ajout de PositionLevel")
-    pos_level.text = commande_data['Classification']
+    pos_level.text = commande_data.get(class_key, '')
     
     # PositionCoefficient
     pos_coef = pos_char.find("PositionCoefficient")
     if pos_coef is None:
         pos_coef = ET.SubElement(pos_char, "PositionCoefficient")
         corrections.append("Ajout de PositionCoefficient")
-    pos_coef.text = commande_data['HRBP']
+    pos_coef.text = commande_data.get(hrbp_key, '')
     
     return corrections
+
+# Fonction pour formater le XML avec indentation
+def prettify_xml(elem, level=0):
+    """Ajoute une indentation propre au XML"""
+    indent = "\n" + "  " * level
+    if len(elem):
+        if not elem.text or not elem.text.strip():
+            elem.text = indent + "  "
+        if not elem.tail or not elem.tail.strip():
+            elem.tail = indent
+        for child in elem:
+            prettify_xml(child, level + 1)
+        if not child.tail or not child.tail.strip():
+            child.tail = indent
+    else:
+        if level and (not elem.tail or not elem.tail.strip()):
+            elem.tail = indent
 
 # Interface principale
 col1, col2 = st.columns([1, 2])
@@ -269,8 +333,13 @@ with col2:
                     file_result['Message'] = f"Trouvé dans <{found_in}>"
                     total_corrections += len(corrections)
                     
+                    # Formater le XML avec indentation
+                    prettify_xml(root)
+                    
                     # Sauvegarder le fichier corrigé
-                    xml_str = ET.tostring(root, encoding='unicode', method='xml')
+                    xml_str = '<?xml version="1.0" encoding="UTF-8"?>\n'
+                    xml_str += ET.tostring(root, encoding='unicode', method='xml')
+                    
                     corrected_files.append({
                         'name': uploaded_file.name,
                         'content': xml_str,
@@ -301,7 +370,7 @@ with col2:
             with col_stat1:
                 st.metric("Total traités", total_files)
             with col_stat2:
-                st.metric("Succès", success_files, delta=f"{success_files/total_files*100:.0f}%")
+                st.metric("Succès", success_files, delta=f"{success_files/total_files*100:.0f}%" if total_files > 0 else "0%")
             with col_stat3:
                 st.metric("Avertissements", warning_files)
             with col_stat4:
@@ -357,7 +426,8 @@ st.markdown("""
 <div style='text-align: center; color: #666;'>
     <small>
     💡 Les données sont synchronisées depuis Google Sheets via GitHub<br>
-    🔄 Actualisez la page pour voir les dernières mises à jour
+    🔄 Actualisez la page pour voir les dernières mises à jour<br>
+    ⚠️ Note: Si vous avez des erreurs d'encodage, installez 'chardet' avec: pip install chardet
     </small>
 </div>
 """, unsafe_allow_html=True)
