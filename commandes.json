@@ -22174,5 +22174,32 @@
     "HRBP": "Delphine Collas",
     "Date extraction": "2025-07-26T20:57:33.726Z",
     "Nom fichier source": "Boehringer_2025-07-25_14-49-30_PIXID____Commande___Boehringer_Ingelheim_3301___Sa_19841f1123ebda17.html"
+  },
+  {
+    "Num?ro de commande": "000682",
+    "Code agence": "LV2-LV2",
+    "Statut": "N2 - Niveau 2 (4B +)",
+    "Classification": "07A - 400",
+    "HRBP": "Ghozelene De Palmas",
+    "Date extraction": "2025-07-26T21:12:28.582Z",
+    "Nom fichier source": "Boehringer_2025-07-25_12-44-01_PIXID____Commande___Boehringer_Ingelheim_3301___Sa_19843bacb84f6b74.html"
+  },
+  {
+    "Num?ro de commande": "000681",
+    "Code agence": "LV2-LV2",
+    "Statut": "N2 - Niveau 2 (4B +)",
+    "Classification": "06B - 330",
+    "HRBP": "Delphine Collas",
+    "Date extraction": "2025-07-26T21:12:29.999Z",
+    "Nom fichier source": "Boehringer_2025-07-25_14-49-07_PIXID____Commande___Boehringer_Ingelheim_3301___Sa_19841ffd349a8430.html"
+  },
+  {
+    "Num?ro de commande": "000680",
+    "Code agence": "LV2-LV2",
+    "Statut": "N2 - Niveau 2 (4B +)",
+    "Classification": "06B - 330",
+    "HRBP": "Delphine Collas",
+    "Date extraction": "2025-07-26T21:12:31.373Z",
+    "Nom fichier source": "Boehringer_2025-07-25_14-49-30_PIXID____Commande___Boehringer_Ingelheim_3301___Sa_19841f1123ebda17.html"
   }
 ]
