@@ -22489,5 +22489,23 @@
     "HRBP": "Marie-Pierre Leger",
     "Date extraction": "2025-07-28T11:27:36.732Z",
     "Nom fichier source": "Boehringer_2025-07-28_11-41-15_PIXID____Commande___Boehringer_Ingelheim_3301___Sa_198506a29a35905c.html"
+  },
+  {
+    "Num?ro de commande": "000688",
+    "Code agence": "ULY-ULY",
+    "Statut": "N2 - Niveau 2 (4B +)",
+    "Classification": "05B - 275",
+    "HRBP": "Gabrielle Humbert",
+    "Date extraction": "2025-07-28T11:42:27.118Z",
+    "Nom fichier source": "Boehringer_2025-07-28_11-05-07_PIXID____Commande___Boehringer_Ingelheim_3301___Sa_198504805e89c689.html"
+  },
+  {
+    "Num?ro de commande": "000677",
+    "Code agence": "LV2-LV2",
+    "Statut": "N2 - Niveau 2 (4B +)",
+    "Classification": "04B - 225",
+    "HRBP": "Marie-Pierre Leger",
+    "Date extraction": "2025-07-28T11:42:28.810Z",
+    "Nom fichier source": "Boehringer_2025-07-28_11-41-15_PIXID____Commande___Boehringer_Ingelheim_3301___Sa_198506a29a35905c.html"
   }
 ]
