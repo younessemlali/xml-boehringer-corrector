@@ -29122,5 +29122,32 @@
     "HRBP": "Marie-Pierre Leger",
     "Date extraction": "2025-07-30T21:12:32.300Z",
     "Nom fichier source": "Boehringer_2025-07-30_13-57-30_PIXID___modification_de__Commande___Boehringer_Ing_1985c56c33650f20.html"
+  },
+  {
+    "Num?ro de commande": "000697",
+    "Code agence": "LV2-LV2",
+    "Statut": "N1 - Niveau 1 (2A / 4A)",
+    "Classification": "03B - 195 Equipe",
+    "HRBP": "Houria Gherras",
+    "Date extraction": "2025-07-30T21:27:30.784Z",
+    "Nom fichier source": "Boehringer_2025-07-30_13-17-13_PIXID____Commande___Boehringer_Ingelheim_3301___Sa_1985b33c9da8a8ec.html"
+  },
+  {
+    "Num?ro de commande": "000698",
+    "Code agence": "LV2-LV2",
+    "Statut": "N2 - Niveau 2 (4B +)",
+    "Classification": "04B - 225",
+    "HRBP": "Marie-Pierre Leger",
+    "Date extraction": "2025-07-30T21:27:32.290Z",
+    "Nom fichier source": "Boehringer_2025-07-30_13-50-28_PIXID____Commande___Boehringer_Ingelheim_3301___Sa_1985b5db2f442a9d.html"
+  },
+  {
+    "Num?ro de commande": "000698",
+    "Code agence": "LV2-LV2",
+    "Statut": "N2 - Niveau 2 (4B +)",
+    "Classification": "04B - 225",
+    "HRBP": "Marie-Pierre Leger",
+    "Date extraction": "2025-07-30T21:27:33.570Z",
+    "Nom fichier source": "Boehringer_2025-07-30_13-57-30_PIXID___modification_de__Commande___Boehringer_Ing_1985c56c33650f20.html"
   }
 ]
