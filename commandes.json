@@ -69055,5 +69055,23 @@
     "HRBP": "Isabelle Ducluzeaud",
     "Date extraction": "2025-09-12T12:57:40.086Z",
     "Nom fichier source": "Boehringer_2025-09-11_14-04-28_PIXID____Commande___Boehringer_Ingelheim_3301___To_1993be7edb645f9e.html"
+  },
+  {
+    "Num?ro de commande": "000771",
+    "Code agence": "TL4-TL4",
+    "Statut": "N1 - Niveau 1 (2A / 4A)",
+    "Classification": "02B - 170 Equipe",
+    "HRBP": "Isabelle Ducluzeaud",
+    "Date extraction": "2025-09-12T13:12:27.847Z",
+    "Nom fichier source": "Boehringer_2025-09-11_14-10-40_PIXID____Commande___Boehringer_Ingelheim_3301___To_1993a3b81f4cc9f6.html"
+  },
+  {
+    "Num?ro de commande": "000767",
+    "Code agence": "TL4-TL4",
+    "Statut": "N2 - Niveau 2 (4B +)",
+    "Classification": "07A - 400",
+    "HRBP": "Isabelle Ducluzeaud",
+    "Date extraction": "2025-09-12T13:12:29.791Z",
+    "Nom fichier source": "Boehringer_2025-09-11_14-04-28_PIXID____Commande___Boehringer_Ingelheim_3301___To_1993be7edb645f9e.html"
   }
 ]
