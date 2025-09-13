@@ -70000,5 +70000,23 @@
     "HRBP": "Nadia Zeggaoui",
     "Date extraction": "2025-09-12T23:57:39.240Z",
     "Nom fichier source": "Boehringer_2025-09-12_14-59-41_PIXID___modification_de__Commande___Boehringer_Ing_1993e61a2b404dbf.html"
+  },
+  {
+    "Num?ro de commande": "000767",
+    "Code agence": "TL4-TL4",
+    "Statut": "N2 - Niveau 2 (4B +)",
+    "Classification": "07A - 400",
+    "HRBP": "Isabelle Ducluzeaud",
+    "Date extraction": "2025-09-13T00:12:25.720Z",
+    "Nom fichier source": "Boehringer_2025-09-11_14-04-28_PIXID____Commande___Boehringer_Ingelheim_3301___To_1993be7edb645f9e.html"
+  },
+  {
+    "Num?ro de commande": "000002",
+    "Code agence": "LV2-LV2",
+    "Statut": "N2 - Niveau 2 (4B +)",
+    "Classification": "06Ca - 365 (NON-CADRE)",
+    "HRBP": "Nadia Zeggaoui",
+    "Date extraction": "2025-09-13T00:12:35.769Z",
+    "Nom fichier source": "Boehringer_2025-09-12_14-59-41_PIXID___modification_de__Commande___Boehringer_Ing_1993e61a2b404dbf.html"
   }
 ]
