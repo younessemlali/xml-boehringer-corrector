@@ -76219,5 +76219,32 @@
     "HRBP": "Isabelle Ducluzeaud",
     "Date extraction": "2025-09-25T11:42:31.624Z",
     "Nom fichier source": "Boehringer_2025-09-24_16-07-54_PIXID____Commande___Boehringer_Ingelheim_3301___To_1997c426d188e7cd.html"
+  },
+  {
+    "Num?ro de commande": "000789",
+    "Code agence": "",
+    "Statut": "N2 - Niveau 2 (4B +)",
+    "Classification": "04B - 225 Equipe",
+    "HRBP": "Claudia Puskas",
+    "Date extraction": "2025-09-25T12:12:25.123Z",
+    "Nom fichier source": "Boehringer_2025-09-24_15-01-29_PIXID___Suppression_de_Commande___Boehringer_Ingel_1997bdf9382ea487.html"
+  },
+  {
+    "Num?ro de commande": "000785",
+    "Code agence": "TL4-TL4",
+    "Statut": "N1 - Niveau 1 (2A / 4A)",
+    "Classification": "02B - 170 Equipe",
+    "HRBP": "Isabelle Ducluzeaud",
+    "Date extraction": "2025-09-25T12:12:26.573Z",
+    "Nom fichier source": "Boehringer_2025-09-24_16-06-06_PIXID____Commande___Boehringer_Ingelheim_3301___To_1997e9ab0e931d23.html"
+  },
+  {
+    "Num?ro de commande": "000787",
+    "Code agence": "TL4-TL4",
+    "Statut": "N1 - Niveau 1 (2A / 4A)",
+    "Classification": "02B - 170 Equipe",
+    "HRBP": "Isabelle Ducluzeaud",
+    "Date extraction": "2025-09-25T12:12:28.019Z",
+    "Nom fichier source": "Boehringer_2025-09-24_16-07-54_PIXID____Commande___Boehringer_Ingelheim_3301___To_1997c426d188e7cd.html"
   }
 ]
