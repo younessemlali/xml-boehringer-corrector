@@ -78190,5 +78190,50 @@
     "HRBP": "Houria Gherras",
     "Date extraction": "2025-12-05T05:12:29.699Z",
     "Nom fichier source": "Boehringer_2025-12-04_10-37-11_PIXID____Commande___Boehringer_Ingelheim_3301___Le_19aec67ff2fa8352.html"
+  },
+  {
+    "Num?ro de commande": "000784",
+    "Code agence": "LV2-LV2",
+    "Statut": "N2 - Niveau 2 (4B +)",
+    "Classification": "07A - 400",
+    "HRBP": "Ghozelene De Palmas",
+    "Date extraction": "2025-12-05T17:27:25.485Z",
+    "Nom fichier source": "Boehringer_2025-12-04_11-15-27_PIXID____Commande___Boehringer_Ingelheim_3301___Sa_19aeab08c1d9f4d7.html"
+  },
+  {
+    "Num?ro de commande": "000249",
+    "Code agence": "LV2-LV2",
+    "Statut": "N1 - Niveau 1 (2A / 4A)",
+    "Classification": "03B - 195 Equipe",
+    "HRBP": "Houria Gherras",
+    "Date extraction": "2025-12-05T17:27:27.095Z",
+    "Nom fichier source": "Boehringer_2025-12-04_09-21-41_PIXID___modification_de__Commande___Boehringer_Ing_19aeadde12c96d6c.html"
+  },
+  {
+    "Num?ro de commande": "000250",
+    "Code agence": "LV2-LV2",
+    "Statut": "N2 - Niveau 2 (4B +)",
+    "Classification": "07A - 400",
+    "HRBP": "Houria Gherras",
+    "Date extraction": "2025-12-05T17:27:28.448Z",
+    "Nom fichier source": "Boehringer_2025-12-04_10-37-11_PIXID____Commande___Boehringer_Ingelheim_3301___Le_19aec67ff2fa8352.html"
+  },
+  {
+    "Num?ro de commande": "000785",
+    "Code agence": "LV2-LV2",
+    "Statut": "N1 - Niveau 1 (2A / 4A)",
+    "Classification": "03B - 195 Journ?e",
+    "HRBP": "Mareva Monnot",
+    "Date extraction": "2025-12-05T17:27:30.839Z",
+    "Nom fichier source": "Boehringer_2025-12-04_16-25-06_PIXID____Commande___Boehringer_Ingelheim_3301___Sa_19aef1a689426e54.html"
+  },
+  {
+    "Num?ro de commande": "000786",
+    "Code agence": "LV2-LV2",
+    "Statut": "N2 - Niveau 2 (4B +)",
+    "Classification": "05B - 275",
+    "HRBP": "Gabrielle Humbert",
+    "Date extraction": "2025-12-05T17:27:32.208Z",
+    "Nom fichier source": "Boehringer_2025-12-05_10-03-33_PIXID____Commande___Boehringer_Ingelheim_3301___Sa_19aef7f0175c3ea3.html"
   }
 ]
