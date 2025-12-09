@@ -78343,5 +78343,41 @@
     "HRBP": "Houria Gherras",
     "Date extraction": "2025-12-06T14:12:30.684Z",
     "Nom fichier source": "Boehringer_2025-12-05_17-23-17_PIXID____Commande___Boehringer_Ingelheim_3301___Sa_19aefc2d3021bdcd.html"
+  },
+  {
+    "Num?ro de commande": "000806",
+    "Code agence": "LV2-LV2",
+    "Statut": "N2 - Niveau 2 (4B +)",
+    "Classification": "04B - 225",
+    "HRBP": "Marie-Pierre Leger",
+    "Date extraction": "2025-12-09T21:27:25.475Z",
+    "Nom fichier source": "Boehringer_2025-12-09_15-10-43_PIXID____Commande___Boehringer_Ingelheim_3301___Sa_19b0373d4f527ec0.html"
+  },
+  {
+    "Num?ro de commande": "000845",
+    "Code agence": "U72-U72",
+    "Statut": "N2 - Niveau 2 (4B +)",
+    "Classification": "07A - 400",
+    "HRBP": "Isabelle Ducluzeaud",
+    "Date extraction": "2025-12-09T21:27:27.577Z",
+    "Nom fichier source": "Boehringer_2025-12-09_16-58-01_PIXID____Commande___Boehringer_Ingelheim_3301___To_19b03d60cb01d4ae.html"
+  },
+  {
+    "Num?ro de commande": "000846",
+    "Code agence": "TL4-TL4",
+    "Statut": "N1 - Niveau 1 (2A / 4A)",
+    "Classification": "02B - 170 Equipe",
+    "HRBP": "Claudia Puskas",
+    "Date extraction": "2025-12-09T21:27:30.154Z",
+    "Nom fichier source": "Boehringer_2025-12-09_17-16-51_PIXID____Commande___Boehringer_Ingelheim_3301___To_19b03e6d0b9eb76e.html"
+  },
+  {
+    "Num?ro de commande": "000847",
+    "Code agence": "TL4-TL4",
+    "Statut": "N1 - Niveau 1 (2A / 4A)",
+    "Classification": "02B - 170 Equipe",
+    "HRBP": "Isabelle Ducluzeaud",
+    "Date extraction": "2025-12-09T21:27:31.473Z",
+    "Nom fichier source": "Boehringer_2025-12-09_17-16-17_PIXID____Commande___Boehringer_Ingelheim_3301___To_19b03e64c4579926.html"
   }
 ]
