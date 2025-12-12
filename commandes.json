@@ -78379,5 +78379,68 @@
     "HRBP": "Isabelle Ducluzeaud",
     "Date extraction": "2025-12-09T21:27:31.473Z",
     "Nom fichier source": "Boehringer_2025-12-09_17-16-17_PIXID____Commande___Boehringer_Ingelheim_3301___To_19b03e64c4579926.html"
+  },
+  {
+    "Num?ro de commande": "000782",
+    "Code agence": "",
+    "Statut": "N1 - Niveau 1 (2A / 4A)",
+    "Classification": "02B - 170 Equipe",
+    "HRBP": "Isabelle Ducluzeaud",
+    "Date extraction": "2025-12-11T23:57:25.779Z",
+    "Nom fichier source": "Boehringer_2025-12-11_10-46-49_PIXID___Suppression_de_Commande___Boehringer_Ingel_19b0cce75260c757.html"
+  },
+  {
+    "Num?ro de commande": "000809",
+    "Code agence": "LV2-LV2",
+    "Statut": "N2 - Niveau 2 (4B +)",
+    "Classification": "05B - 275",
+    "HRBP": "Arnaud Hinninger",
+    "Date extraction": "2025-12-11T23:57:27.119Z",
+    "Nom fichier source": "Boehringer_2025-12-11_10-53-29_PIXID____Commande___Boehringer_Ingelheim_3301___Sa_19b0cd509d31c7b3.html"
+  },
+  {
+    "Num?ro de commande": "000016",
+    "Code agence": "VE2-VE2",
+    "Statut": "N2 - Niveau 2 (4B +)",
+    "Classification": "04B - 225",
+    "HRBP": "C?line Lacaze",
+    "Date extraction": "2025-12-11T23:57:28.447Z",
+    "Nom fichier source": "Boehringer_2025-12-11_12-36-58_PIXID____Commande___Boehringer_Ingelheim_0187___Ly_19b0d3349ec0662c.html"
+  },
+  {
+    "Num?ro de commande": "000810",
+    "Code agence": "U72-U72",
+    "Statut": "N2 - Niveau 2 (4B +)",
+    "Classification": "07A - 400",
+    "HRBP": "Delphine Collas",
+    "Date extraction": "2025-12-11T23:57:29.893Z",
+    "Nom fichier source": "Boehringer_2025-12-11_13-58-26_PIXID____Commande___Boehringer_Ingelheim_3301___Sa_19b0d7f48049b0ee.html"
+  },
+  {
+    "Num?ro de commande": "000254",
+    "Code agence": "LV2-LV2",
+    "Statut": "N1 - Niveau 1 (2A / 4A)",
+    "Classification": "02B - 170 Equipe",
+    "HRBP": "Houria Gherras",
+    "Date extraction": "2025-12-11T23:57:31.639Z",
+    "Nom fichier source": "Boehringer_2025-12-11_14-46-08_PIXID____Commande___Boehringer_Ingelheim_3301___Le_19b0da988f0fc4f4.html"
+  },
+  {
+    "Num?ro de commande": "000253",
+    "Code agence": "LV2-LV2",
+    "Statut": "N1 - Niveau 1 (2A / 4A)",
+    "Classification": "2-B - 170 (18 mois)",
+    "HRBP": "Houria Gherras",
+    "Date extraction": "2025-12-11T23:57:33.128Z",
+    "Nom fichier source": "Boehringer_2025-12-11_14-29-26_PIXID____Commande___Boehringer_Ingelheim_3301___Le_19b0d9b90c52aa9d.html"
+  },
+  {
+    "Num?ro de commande": "000256",
+    "Code agence": "LV2-LV2",
+    "Statut": "N1 - Niveau 1 (2A / 4A)",
+    "Classification": "03B - 195 Equipe",
+    "HRBP": "Houria Gherras",
+    "Date extraction": "2025-12-11T23:57:34.497Z",
+    "Nom fichier source": "Boehringer_2025-12-11_17-20-09_PIXID____Commande___Boehringer_Ingelheim_3301___Le_19b0e36882b44776.html"
   }
 ]
