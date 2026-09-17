@@ -83284,5 +83284,59 @@
     "HRBP": "Isabelle Ducluzeaud",
     "Date extraction": "2026-09-17T15:10:30.284Z",
     "Nom fichier source": "Boehringer_2026-09-17_12-18-25_PIXID____Commande___Boehringer_Ingelheim_3301___To_1a0af2d6f7f781b7.html"
+  },
+  {
+    "Num?ro de commande": "000349",
+    "Code agence": "LV2-LV2",
+    "Statut": "N2 - Niveau 2 (4B +)",
+    "Classification": "07A - 400",
+    "HRBP": "Houria Gherras",
+    "Date extraction": "2026-09-17T16:10:24.476Z",
+    "Nom fichier source": "Boehringer_2026-09-16_16-16-25_PIXID____Commande___Boehringer_Ingelheim_3301___Le_1a0ab17f758837c3.html"
+  },
+  {
+    "Num?ro de commande": "001187",
+    "Code agence": "LTB-LTB",
+    "Statut": "N1 - Niveau 1 (2A / 4A)",
+    "Classification": "02B - 170 Equipe",
+    "HRBP": "Isabelle Ducluzeaud",
+    "Date extraction": "2026-09-17T16:10:25.378Z",
+    "Nom fichier source": "Boehringer_2026-09-16_17-23-48_PIXID____Commande___Boehringer_Ingelheim_3301___To_1a0ac05dfaab618c.html"
+  },
+  {
+    "Num?ro de commande": "001188",
+    "Code agence": "LTB-LTB",
+    "Statut": "N1 - Niveau 1 (2A / 4A)",
+    "Classification": "02B - 170 Equipe",
+    "HRBP": "Isabelle Ducluzeaud",
+    "Date extraction": "2026-09-17T16:10:26.305Z",
+    "Nom fichier source": "Boehringer_2026-09-16_17-19-25_PIXID____Commande___Boehringer_Ingelheim_3301___To_1a0aad09bf86757f.html"
+  },
+  {
+    "Num?ro de commande": "001084",
+    "Code agence": "LV2-LV2",
+    "Statut": "N2 - Niveau 2 (4B +)",
+    "Classification": "07A - 400",
+    "HRBP": "Mareva Monnot",
+    "Date extraction": "2026-09-17T16:10:27.179Z",
+    "Nom fichier source": "Boehringer_2026-09-17_09-33-26_PIXID____Commande___Boehringer_Ingelheim_3301___Sa_1a0ae5ad1ec79bca.html"
+  },
+  {
+    "Num?ro de commande": "001194",
+    "Code agence": "LTB-LTB",
+    "Statut": "N1 - Niveau 1 (2A / 4A)",
+    "Classification": "02B - 170 Equipe",
+    "HRBP": "Isabelle Ducluzeaud",
+    "Date extraction": "2026-09-17T16:10:28.028Z",
+    "Nom fichier source": "Boehringer_2026-09-17_12-18-25_PIXID____Commande___Boehringer_Ingelheim_3301___To_1a0af2d6f7f781b7.html"
+  },
+  {
+    "Num?ro de commande": "001196",
+    "Code agence": "U72-U72",
+    "Statut": "N2 - Niveau 2 (4B +)",
+    "Classification": "04B - 225",
+    "HRBP": "Isabelle Ducluzeaud",
+    "Date extraction": "2026-09-17T16:10:29.060Z",
+    "Nom fichier source": "Boehringer_2026-09-17_12-28-39_PIXID____Commande___Boehringer_Ingelheim_3301___To_1a0afd60614a72b9.html"
   }
 ]
