@@ -86920,5 +86920,23 @@
     "HRBP": "Isabelle Ducluzeaud",
     "Date extraction": "2026-10-08T02:10:25.343Z",
     "Nom fichier source": "Boehringer_2026-10-07_15-14-02_PIXID____Commande___Boehringer_Ingelheim_3301___To_1a11742bd3428da8.html"
+  },
+  {
+    "Num?ro de commande": "000018",
+    "Code agence": "",
+    "Statut": "N2 - Niveau 2 (4B +)",
+    "Classification": "04B - 225",
+    "HRBP": "Marie-Pierre Leger",
+    "Date extraction": "2026-10-08T03:10:24.521Z",
+    "Nom fichier source": "Boehringer_2026-10-07_15-50-48_Fwd__PIXID___modification_de_Commande___Boehringer_1a116a2010a3c1f6.html"
+  },
+  {
+    "Num?ro de commande": "001236",
+    "Code agence": "LTB-LTB",
+    "Statut": "N1 - Niveau 1 (2A / 4A)",
+    "Classification": "02B - 170",
+    "HRBP": "Isabelle Ducluzeaud",
+    "Date extraction": "2026-10-08T03:10:25.410Z",
+    "Nom fichier source": "Boehringer_2026-10-07_15-14-02_PIXID____Commande___Boehringer_Ingelheim_3301___To_1a11742bd3428da8.html"
   }
 ]
