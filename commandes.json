@@ -87406,5 +87406,23 @@
     "HRBP": "Gabrielle Humbert",
     "Date extraction": "2026-10-10T00:10:25.568Z",
     "Nom fichier source": "Boehringer_2026-10-07_16-41-07_PIXID____Commande___Boehringer_Ingelheim_3301___Sa_1a11f934ffb1a591.html"
+  },
+  {
+    "Num?ro de commande": "001240",
+    "Code agence": "LTB-LTB",
+    "Statut": "N1 - Niveau 1 (2A / 4A)",
+    "Classification": "02B - 170 Equipe",
+    "HRBP": "Isabelle Ducluzeaud",
+    "Date extraction": "2026-10-10T01:10:24.784Z",
+    "Nom fichier source": "Boehringer_2026-10-08_11-27-45_PIXID____Commande___Boehringer_Ingelheim_3301___To_1a11e9c1ecf9ad0d.html"
+  },
+  {
+    "Num?ro de commande": "001095",
+    "Code agence": "ULY-ULY",
+    "Statut": "N2 - Niveau 2 (4B +)",
+    "Classification": "07A - 400",
+    "HRBP": "Gabrielle Humbert",
+    "Date extraction": "2026-10-10T01:10:25.860Z",
+    "Nom fichier source": "Boehringer_2026-10-07_16-41-07_PIXID____Commande___Boehringer_Ingelheim_3301___Sa_1a11f934ffb1a591.html"
   }
 ]
