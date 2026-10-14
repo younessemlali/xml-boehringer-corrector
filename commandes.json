@@ -88765,5 +88765,41 @@
     "HRBP": "Isabelle Ducluzeaud",
     "Date extraction": "2026-10-14T04:10:27.168Z",
     "Nom fichier source": "Boehringer_2026-10-13_18-09-30_PIXID___Suppression_de_Commande___Boehringer_Ingel_1a138690e55443cb.html"
+  },
+  {
+    "Num?ro de commande": "001246",
+    "Code agence": "LTB-LTB",
+    "Statut": "N1 - Niveau 1 (2A / 4A)",
+    "Classification": "02B - 170 Equipe",
+    "HRBP": "Isabelle Ducluzeaud",
+    "Date extraction": "2026-10-14T06:10:24.671Z",
+    "Nom fichier source": "Boehringer_2026-10-09_17-21-20_PIXID____Commande___Boehringer_Ingelheim_3301___To_1a133e7d98af1054.html"
+  },
+  {
+    "Num?ro de commande": "001243",
+    "Code agence": "LTB-LTB",
+    "Statut": "N1 - Niveau 1 (2A / 4A)",
+    "Classification": "02B - 170 Equipe",
+    "HRBP": "Isabelle Ducluzeaud",
+    "Date extraction": "2026-10-14T06:10:25.634Z",
+    "Nom fichier source": "Boehringer_2026-10-09_17-20-56_PIXID____Commande___Boehringer_Ingelheim_3301___To_1a125e3511ed3927.html"
+  },
+  {
+    "Num?ro de commande": "001242",
+    "Code agence": "LTB-LTB",
+    "Statut": "N1 - Niveau 1 (2A / 4A)",
+    "Classification": "02B - 170 Equipe",
+    "HRBP": "Isabelle Ducluzeaud",
+    "Date extraction": "2026-10-14T06:10:26.474Z",
+    "Nom fichier source": "Boehringer_2026-10-09_17-03-09_PIXID____Commande___Boehringer_Ingelheim_3301___To_1a12374a027d7ebf.html"
+  },
+  {
+    "Num?ro de commande": "001242",
+    "Code agence": "",
+    "Statut": "N1 - Niveau 1 (2A / 4A)",
+    "Classification": "02B - 170 Equipe",
+    "HRBP": "Isabelle Ducluzeaud",
+    "Date extraction": "2026-10-14T06:10:27.346Z",
+    "Nom fichier source": "Boehringer_2026-10-13_18-09-30_PIXID___Suppression_de_Commande___Boehringer_Ingel_1a138690e55443cb.html"
   }
 ]
