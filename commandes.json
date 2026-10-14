@@ -88909,5 +88909,23 @@
     "HRBP": "C?line Combaret",
     "Date extraction": "2026-10-14T20:10:25.043Z",
     "Nom fichier source": "Boehringer_2026-10-14_16-07-21_PIXID____Commande___Boehringer_Ingelheim_3301___Jo_1a13ae11ab8a328a.html"
+  },
+  {
+    "Num?ro de commande": "001242",
+    "Code agence": "",
+    "Statut": "N1 - Niveau 1 (2A / 4A)",
+    "Classification": "02B - 170 Equipe",
+    "HRBP": "Isabelle Ducluzeaud",
+    "Date extraction": "2026-10-14T21:10:24.457Z",
+    "Nom fichier source": "Boehringer_2026-10-13_18-09-30_PIXID___Suppression_de_Commande___Boehringer_Ingel_1a138690e55443cb.html"
+  },
+  {
+    "Num?ro de commande": "000050",
+    "Code agence": "LV2-LV2",
+    "Statut": "N1 - Niveau 1 (2A / 4A)",
+    "Classification": "03B - 195 Equipe",
+    "HRBP": "C?line Combaret",
+    "Date extraction": "2026-10-14T21:10:25.382Z",
+    "Nom fichier source": "Boehringer_2026-10-14_16-07-21_PIXID____Commande___Boehringer_Ingelheim_3301___Jo_1a13ae11ab8a328a.html"
   }
 ]
