@@ -90106,5 +90106,23 @@
     "HRBP": "Isabelle Ducluzeaud",
     "Date extraction": "2026-10-28T17:10:25.334Z",
     "Nom fichier source": "Boehringer_2026-10-28_15-20-59_PIXID____Commande___Boehringer_Ingelheim_3301___To_1a1831a9aa7f0a14.html"
+  },
+  {
+    "Num?ro de commande": "001130",
+    "Code agence": "LV2-LV2",
+    "Statut": "N2 - Niveau 2 (4B +)",
+    "Classification": "06B - 330",
+    "HRBP": "Delphine Collas",
+    "Date extraction": "2026-10-28T19:10:24.950Z",
+    "Nom fichier source": "Boehringer_2026-10-27_18-19-44_PIXID____Commande___Boehringer_Ingelheim_3301___Sa_1a180544e6485647.html"
+  },
+  {
+    "Num?ro de commande": "001274",
+    "Code agence": "LTB-LTB",
+    "Statut": "N1 - Niveau 1 (2A / 4A)",
+    "Classification": "02B - 170",
+    "HRBP": "Isabelle Ducluzeaud",
+    "Date extraction": "2026-10-28T19:10:25.933Z",
+    "Nom fichier source": "Boehringer_2026-10-28_15-20-59_PIXID____Commande___Boehringer_Ingelheim_3301___To_1a1831a9aa7f0a14.html"
   }
 ]
