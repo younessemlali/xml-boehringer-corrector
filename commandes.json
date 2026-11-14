@@ -91402,5 +91402,32 @@
     "HRBP": "Claudia Puskas",
     "Date extraction": "2026-11-14T06:10:26.112Z",
     "Nom fichier source": "Boehringer_2026-11-13_14-40-08_PIXID____Commande___Boehringer_Ingelheim_3301___To_1a1d688844630974.html"
+  },
+  {
+    "Num?ro de commande": "001292",
+    "Code agence": "LTB-LTB",
+    "Statut": "N1 - Niveau 1 (2A / 4A)",
+    "Classification": "02B - 170 Equipe",
+    "HRBP": "Isabelle Ducluzeaud",
+    "Date extraction": "2026-11-14T07:10:24.326Z",
+    "Nom fichier source": "Boehringer_2026-11-13_15-10-52_PIXID____Commande___Boehringer_Ingelheim_3301___To_1a1d561be63881f3.html"
+  },
+  {
+    "Num?ro de commande": "001293",
+    "Code agence": "LTB-LTB",
+    "Statut": "N1 - Niveau 1 (2A / 4A)",
+    "Classification": "02B - 170 Equipe",
+    "HRBP": "Isabelle Ducluzeaud",
+    "Date extraction": "2026-11-14T07:10:25.225Z",
+    "Nom fichier source": "Boehringer_2026-11-13_15-11-30_PIXID____Commande___Boehringer_Ingelheim_3301___To_1a1d546c3cdc53cd.html"
+  },
+  {
+    "Num?ro de commande": "001290",
+    "Code agence": "U72-U72",
+    "Statut": "N2 - Niveau 2 (4B +)",
+    "Classification": "04B - 225",
+    "HRBP": "Claudia Puskas",
+    "Date extraction": "2026-11-14T07:10:26.045Z",
+    "Nom fichier source": "Boehringer_2026-11-13_14-40-08_PIXID____Commande___Boehringer_Ingelheim_3301___To_1a1d688844630974.html"
   }
 ]
