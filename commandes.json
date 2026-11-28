@@ -92464,5 +92464,32 @@
     "HRBP": "Mareva Monnot",
     "Date extraction": "2026-11-27T23:10:25.665Z",
     "Nom fichier source": "Boehringer_2026-11-27_17-19-10_PIXID____Commande___Boehringer_Ingelheim_3301___Sa_1a21e579f9821b14.html"
+  },
+  {
+    "Num?ro de commande": "001307",
+    "Code agence": "LTB-LTB",
+    "Statut": "N1 - Niveau 1 (2A / 4A)",
+    "Classification": "02B - 170 Equipe",
+    "HRBP": "Isabelle Ducluzeaud",
+    "Date extraction": "2026-11-28T01:10:24.259Z",
+    "Nom fichier source": "Boehringer_2026-11-26_17-34-51_PIXID____Commande___Boehringer_Ingelheim_3301___To_1a21ab1e9862c0c8.html"
+  },
+  {
+    "Num?ro de commande": "001306",
+    "Code agence": "LTB-LTB",
+    "Statut": "N1 - Niveau 1 (2A / 4A)",
+    "Classification": "02B - 170 Equipe",
+    "HRBP": "Isabelle Ducluzeaud",
+    "Date extraction": "2026-11-28T01:10:24.825Z",
+    "Nom fichier source": "Boehringer_2026-11-27_10-29-49_PIXID____Commande___Boehringer_Ingelheim_3301___To_1a21d46e1f49b602.html"
+  },
+  {
+    "Num?ro de commande": "001170",
+    "Code agence": "LV2-LV2",
+    "Statut": "N2 - Niveau 2 (4B +)",
+    "Classification": "04B - 225",
+    "HRBP": "Mareva Monnot",
+    "Date extraction": "2026-11-28T01:10:25.449Z",
+    "Nom fichier source": "Boehringer_2026-11-27_17-19-10_PIXID____Commande___Boehringer_Ingelheim_3301___Sa_1a21e579f9821b14.html"
   }
 ]
